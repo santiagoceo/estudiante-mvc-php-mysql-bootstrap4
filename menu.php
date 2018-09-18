@@ -53,7 +53,7 @@
         <a class="btn btn-outline-primary" href="logout.php">Cerrar sesión</a>
     </div>
     <div class="container text-center">
-        <h1>Bienvenido Umpalumpa</h1>
+        <h1>Bienvenido</h1>
         <p class="lead">Selecciona la opción que deseas realizar</p>
     </div>
 </body>
