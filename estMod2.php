@@ -43,11 +43,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Document</title>
+    <title>Estudiante modificar</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 <body>
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
@@ -55,12 +56,12 @@
         <nav class="my-2 my-md-0 mr-md-3">
         <ul class="nav nav-pills">
             <li class="nav-item">
-            <a class="nav-link active" href="#">Inicio</a>
+            <a class="nav-link" href="menu.php">Inicio</a>
             </li>
             <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Estudiante</a>
+            <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#">Estudiante</a>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="estCon.php">Consultar </a>
+                <a class="dropdown-item active" href="estCon.php">Consultar </a>
                 <a class="dropdown-item" href="estCre.php">Crear </a>
                 <a class="dropdown-item" href="estMod.php">Modificar </a>
                 <a class="dropdown-item" href="estDes.php">Desactivar/Activar </a>

@@ -4,7 +4,7 @@ class Conexion {
     public function conectar(){
         $host = "localhost";
         $user = "root";
-        $password = "root";
+        $password = "";
         $db = "estudiante";
         $conexion = mysqli_connect($host, $user, $password, $db);
         mysqli_query($conexion, "SET NAMES 'utf8'"); //Agregar tildes
