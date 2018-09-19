@@ -46,7 +46,14 @@ class Estudiante {
         return $consulta;
     }
 
-    public function desactivarEstudianteId($conesion){
-
+    public function eliminarEstudianteId($conexion, $id){
+        $query = "CALL eliminarEstudianteID ('$id');";
+        $consulta = mysqli_query($conexion, $query);
+        if ($consulta){
+            $respuesta = "Usuario eliminado";
+        }else{
+            $respuesta = "Error encontrado, el error es: ". mysqli_error($conexion);
+        }
+        return $consulta;
     }
 }

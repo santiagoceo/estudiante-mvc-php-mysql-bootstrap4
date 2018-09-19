@@ -25,4 +25,26 @@ class Acudiente {
         return $consulta;
     }
 
+    public function consultarAcudienteId($conexion, $id){
+        $query = "CALL consultarAcudienteId ('$id')";
+        $consulta = mysqli_query($conexion, $query);
+        if ($consulta){
+            $respuesta = "Consulta realizada";
+        }else{
+            $respuesta = "Error encontrado, el error es: ". mysqli_error($conexion);
+        }
+        return $consulta;
+    }
+
+    public function actualizarAcudienteId($conexion, $id, $nombre, $apellido, $fechaNacimiento, $tel, $direccion, $id_municipio){
+        $query = "CALL actualizarAcudienteId ('$id','$nombre','$apellido','$fechaNacimiento','$tel','$direccion','$id_municipio')";
+        $consulta = mysqli_query($conexion, $query);
+        if ($consulta){
+            $respuesta = "Modificación realizada";
+        }else{
+            $respuesta = "Error encontrado, el error es: ". mysqli_error($conexion);
+        }
+        return $consulta;
+    }
+
 }
