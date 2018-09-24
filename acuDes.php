@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Acudiente modificar</title>
+    <title>Acudiente eliminar</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -44,8 +44,8 @@
             <div class="dropdown-menu">
                 <a class="dropdown-item" href="acuCon.php">Consultar </a>
                 <a class="dropdown-item" href="acuCre.php">Crear </a>
-                <a class="dropdown-item active" href="acuMod.php">Modificar </a>
-                <a class="dropdown-item" href="acuDes.php">Desactivar/Activar </a>
+                <a class="dropdown-item" href="acuMod.php">Modificar </a>
+                <a class="dropdown-item active" href="acuDes.php">Desactivar/Activar </a>
             </div>
             </li>
             <li class="nav-item dropdown">
@@ -65,7 +65,7 @@
     </div>
     <div class="container text-center">
         <h1>Modificar Acudiente</h1>
-        <p class="lead">A continuación podrás modificar un acudiente</p>
+        <p class="lead">A continuación podrás eliminar un acudiente</p>
     </div>
     <div class="container">
         <table class="table table-striped">
@@ -104,7 +104,7 @@
                     <?php echo $dato['municipio'] ?></a>
                 </td>
                 <td scope="row">
-                    <a href="acuMod2.php?id=<?php echo $dato['idAcudiente']?>">Modificar</a>
+                    <a href="acuDes2.php?id=<?php echo $dato['idAcudiente']?>">Eliminar</a>
                 </td>
                 </tr>
                 <?php

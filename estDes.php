@@ -65,7 +65,7 @@
     </div>
     <div class="container text-center">
         <h1>Eliminar Estudiante</h1>
-        <p class="lead">A continuación podrás modificar un estudiante inscritos en la plataforma</p>
+        <p class="lead">A continuación podrás eliminar un estudiante inscrito en la plataforma</p>
     </div>
     <div class="container">
         <table class="table table-striped">

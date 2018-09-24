@@ -47,4 +47,15 @@ class Acudiente {
         return $consulta;
     }
 
+    public function eliminarAcudienteId($conexion, $id){
+        $query = "CALL eliminarAcudienteID ('$id');";
+        $consulta = mysqli_query($conexion, $query);
+        if ($consulta){
+            $respuesta = "Acudiente eliminado";
+        }else{
+            $respuesta = "Error encontrado, el error es: ". mysqli_error($conexion);
+        }
+        return $consulta;
+    }
+
 }
